@@ -1,0 +1,56 @@
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/forest-landscape_71767-127.jpg?w=740&t=st=1707290686~exp=1707291286~hmac=7cf6ea2d5448d3e46d24b562c6bb52dfd16bc3521bfc2aad334cefb5bf69afd0");
+    background-size: cover;
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    width: 524px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #ffff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+}
+nav a:nth-child(2):hover~span {
+    left: 95px;
+}
+nav a:nth-child(3):hover~span {
+    left: 190px;
+}
+nav a:nth-child(4):hover~span {
+    left: 295px;
+}
+nav a:nth-child(5):hover~span {
+    left: 428px;
+}
